@@ -10,4 +10,6 @@ julia test1.jl
 ``
 
 
-![LMS](https://user-images.githubusercontent.com/89382258/166684185-e5da3bdb-ffc3-48c4-a5b2-e5599fd25047.png)
+<h3>Results</h3>
+The average of 10 simulations
+![LMS](https://user-images.githubusercontent.com/89382258/166684742-7fc2fb84-b785-42b7-946d-689b55e890ec.png)

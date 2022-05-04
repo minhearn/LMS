@@ -29,9 +29,9 @@ for Exp=1:NoExp
 	X = sqrt(SignalPower)*randn(SystemDim,Ntimes)
 	Noise = randn(Ntimes)
 	NoisePower = SignalPower*10^(-SNR/10)
-	Levy = pyimport("levy")
-	Outliers = Levy.random(alphaLevy, betaLevy, muLevy, sigmaLevy, shape=(Ntimes))
-	y = X'*thetaStar + sqrt(NoisePower)*Noise + Outliers
+	# Levy = pyimport("levy")
+	# Outliers = Levy.random(alphaLevy, betaLevy, muLevy, sigmaLevy, shape=(Ntimes))
+	y = X'*thetaStar + sqrt(NoisePower)*Noise # + Outliers
 	NormDev = Vector{Float64}(undef, Ntimes)
 	
 	Theta = randn(SystemDim)
